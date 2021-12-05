@@ -1,0 +1,95 @@
+h2 {
+  animation: transitionIn 2s;
+  text-align: center;
+  color: white;
+}
+  
+footer {
+  animation: transitionIn 2s;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  margin-top: 150px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* ---blender--- */
+#square {
+  animation: transitionIn 2s;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  margin-bottom: 50px;
+}
+#notsquare {
+  animation: transitionIn 2s;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+
+/* ---edit--- */
+.edit_1 {
+  animation: transitionIn 2s;
+  margin: 0 auto;
+  display: block;
+  width: 65%;
+  margin-top: 50px;
+}
+.edit_2 {
+  animation: transitionIn 2s;
+  margin: 0 auto;
+  display: block;
+  width: 55%;
+  margin-bottom: 50px;
+}
+.edit_3 {
+  animation: transitionIn 2s;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.edit_4 {
+  animation: transitionIn 2s;
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 600px){
+  footer {
+    font-size: 0.4em;
+  }
+
+  h2 {
+    display: none;
+  }
+  #square, #notsquare {
+    width: 90%;
+  }
+
+  .edit_1, .edit_3 {
+    width: 90%;
+  }
+  .edit_2 {
+    width: 85%;
+  }
+  .edit_4 {
+    width: 70%;
+  }
+}

@@ -1,0 +1,89 @@
+/* copied from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+
+body {
+    overflow: hidden;
+}
+#mobile_error {
+    visibility: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.container:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 1.1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+#right {
+    animation: transitionIn 2s ease;
+    float: right;
+    margin-right: 100px;
+}
+#left {
+    animation: transitionIn 2s ease;
+    float: left;
+    margin-left: 100px;
+}
+
+
+@media only screen and (max-width: 600px){
+    body {
+        overflow: visible;
+        margin-top: 200px;
+    }
+    #mobile_error {
+        visibility: visible;
+        color: white;
+        font-size: 0.5em;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .container {
+        width: 70%;
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 1;
+    }
+    .text {
+        font-size: 0.5em;
+    }
+
+    #left, #right {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        margin-left: 80px;
+    }
+}

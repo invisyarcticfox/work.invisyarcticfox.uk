@@ -1,3 +1,2 @@
-# work
-a repo for my work because i have enough .html and .css files as it is
-and i wanna use a few subdomains cuz why not
+# work.shamshitty.xyz
+a seperate repo for my work as i kinda just wanted to use a subdomain :)
