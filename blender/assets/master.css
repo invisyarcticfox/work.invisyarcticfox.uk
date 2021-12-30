@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Fira Code', monospace;
+  color: #fff;
+  background: #141414;
+  text-align: center;
+  animation: animIn 1s ease;
+  overflow: visible;
+}
+
+a, a:visited {
+  transition: all 0.3s ease;
+  color: #fff;
+  text-decoration: underline;
+}
+a:hover, a:focus, a:active {
+  transition: all 0.3s ease;
+  color: #c33;
+  text-decoration: underline;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+* {
+  scrollbar-color: #343434 #0B0B0B;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #0B0B0B;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #343434; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4e4e4e;
+}
+
+
+
+@keyframes animIn {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,18 @@
+#thestuff {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+img, video {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.domino, .menger, .mixcloth, .simvid {
+    width: 50%;
+}
+.mixwalk, .simimg {
+    width: 90%;
+}

@@ -1,0 +1,33 @@
+#nav {
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+#thestuff {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+video {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gmodfall, .idc, .trained, .gmensfall, .adam, .stfu {
+    width: 80%;
+}
+.gmodfall_orig {
+    margin-top: -10px;
+    width: 70%;
+}
+.gmanfall {
+    width: 30%;
+}
+.gtg {
+    width: 50%;
+}

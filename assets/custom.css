@@ -1,0 +1,57 @@
+#left {
+    float: left;
+}
+#right {
+    float: right;
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 40%;
+    margin-top: 7%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.container:hover .overlay {
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+.container:hover .image {
+    transition: all 0.3s ease;
+    filter: blur(1px);
+}
+
+.text {
+    color: white;
+    font-size: 2.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
