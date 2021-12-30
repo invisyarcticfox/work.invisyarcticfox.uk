@@ -55,3 +55,25 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+
+
+
+@media only screen and (max-width: 600px){
+    #left, #right {
+        float: none;
+        margin: 0 auto;
+    }
+    #left {
+        margin-top: 15%;
+    }
+    .container {
+        width: 80%;
+    }
+    .overlay {
+        opacity: 1;
+    }
+    .text {
+        font-size: 1.5em;
+    }
+}

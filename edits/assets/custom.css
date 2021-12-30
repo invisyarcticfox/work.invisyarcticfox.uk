@@ -31,3 +31,25 @@ video {
 .gtg {
     width: 50%;
 }
+
+
+
+
+@media only screen and (max-width: 600px){
+    #nav {
+        font-size: 1.2em;
+    }
+    .gmodfall, .idc, .trained, .gmensfall, .adam, .stfu {
+        width: 80%;
+    }
+    .gmodfall_orig {
+        margin-top: -10px;
+        width: 75%;
+    }
+    .gmanfall {
+        width: 90%;
+    }
+    .gtg {
+        width: 90%;
+    }
+}

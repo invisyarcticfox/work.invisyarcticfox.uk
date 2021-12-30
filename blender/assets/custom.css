@@ -24,3 +24,18 @@ img, video {
 .mixwalk, .simimg {
     width: 90%;
 }
+
+
+
+@media only screen and (max-width: 600px){
+    #nav {
+        font-size: 1.2em;
+    }
+    
+    .domino, .menger, .mixcloth, .simvid {
+        width: 80%;
+    }
+    .mixwalk, .simimg {
+        width: 90%;
+    }
+}
