@@ -1,4 +1,9 @@
+body {
+    overflow: visible !important;
+}
+
 #nav {
+    animation: navAnim 2s ease forwards;
     top: 0;
     margin: 0 auto;
     text-align: center;
@@ -7,6 +12,7 @@
 }
 
 #thestuff {
+    animation: animIn 1s ease forwards;
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -23,6 +29,17 @@ img, video {
 }
 .mixwalk, .simimg {
     width: 90%;
+}
+
+
+
+@keyframes navAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
