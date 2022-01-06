@@ -2,13 +2,23 @@ body {
     overflow: visible !important;
 }
 
-#nav {
-    animation: navAnim 2s ease forwards;
-    top: 0;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 2em;
-    letter-spacing: 5px;
+
+#back {
+    animation: backAnim 1.5s 0.5s ease forwards;
+    opacity: 0;
+    text-align: left;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    color: #fff;
+    height: 50px;
+    width: 10%;
+    font-size: 1.5em;
+    margin-left: -9px;
+    margin-top: -5px;
+}
+.back {
+    padding-left: 20px;
+    padding-top: 5px;
 }
 
 #thestuff {
@@ -49,13 +59,22 @@ video {
     }
 }
 
+@keyframes backAnim {
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
 
 
 
 @media only screen and (max-width: 600px){
-    #nav {
-        font-size: 1.2em;
-    }
     .gmodfall, .idc, .trained, .gmensfall, .adam, .stfu {
         width: 80%;
     }
@@ -68,5 +87,8 @@ video {
     }
     .gtg {
         width: 90%;
+    }
+    #back {
+        display: none;
     }
 }
