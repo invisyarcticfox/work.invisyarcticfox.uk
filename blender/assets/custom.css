@@ -1,5 +1,6 @@
 body {
     overflow: visible !important;
+    overflow-x: hidden;
 }
 
 #back {
@@ -32,12 +33,14 @@ img, video {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.domino, .menger, .mixcloth, .simvid {
+.square {
     width: 50%;
 }
-.mixwalk, .simimg {
+.wide {
     width: 90%;
+}
+.fourbythree {
+    width: 70%;
 }
 
 
@@ -65,13 +68,10 @@ img, video {
 
 
 @media only screen and (max-width: 600px){
-    .domino, .menger, .mixcloth, .simvid {
-        width: 80%;
-    }
-    .mixwalk, .simimg {
-        width: 90%;
-    }
     #back {
         display: none;
+    }
+    video, img {
+        width: 90%;
     }
 }
