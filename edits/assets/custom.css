@@ -1,5 +1,6 @@
 body {
     overflow: visible !important;
+    overflow-x: hidden;
 }
 
 
@@ -32,20 +33,6 @@ body {
 video {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.gmodfall, .idc, .trained, .gmensfall, .adam, .stfu {
-    width: 80%;
-}
-.gmodfall_orig {
-    margin-top: -10px;
-    width: 70%;
-}
-.gmanfall {
-    width: 30%;
-}
-.gtg {
-    width: 50%;
 }
 
 .more {
