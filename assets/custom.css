@@ -7,6 +7,23 @@
     float: right;
 }
 
+#back {
+    animation: backAnim 1.5s 0.5s ease forwards;
+    opacity: 0;
+    text-align: left;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    color: #fff;
+    height: 50px;
+    width: 10%;
+    font-size: 1.5em;
+    margin-left: -9px;
+    margin-top: -5px;
+}
+.back {
+    padding-left: 20px;
+    padding-top: 5px;
+}
 
 .container {
     position: relative;
@@ -58,11 +75,13 @@
 
 
 
-@keyframes navAnim {
+@keyframes backAnim {
     from {
+        transform: translateX(-300px);
         opacity: 0;
     }
     to {
+        transform: translateX(0px);
         opacity: 1;
     }
 }
