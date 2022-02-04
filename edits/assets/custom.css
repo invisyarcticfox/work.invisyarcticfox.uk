@@ -31,8 +31,24 @@ body {
 }
 
 video {
+    display: block;
+    margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.gmodfall, .idc, .trained, .gmensfall, .adam, .stfu {
+    width: 75%;
+}
+.gmodfall_orig {
+    width: 70%;
+    margin-top: -10px;
+}
+.gmanfall {
+    width: 30%;
+}
+.gtg {
+    width: 55%;
 }
 
 .more {
@@ -42,15 +58,6 @@ video {
 }
 
 
-
-@keyframes navAnim {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 @keyframes backAnim {
     from {
