@@ -15,43 +15,25 @@ body {
     font-size: 1.5em;
     margin-left: -9px;
     margin-top: -5px;
+
+    position: fixed;
 }
 .back {
     padding-left: 20px;
     padding-top: 5px;
 }
 
-#thestuff {
-    animation: animIn 1s ease forwards;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
 img, video {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.square {
-    width: 50%;
-}
-.wide {
-    width: 90%;
-}
-.fourbythree {
-    width: 70%;
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    margin-bottom: 25px;
 }
 
-
-
-@keyframes navAnim {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.vp {
+    display: block;
+    font-size: 1.7em;
+    margin-bottom: 50px;
 }
 
 @keyframes backAnim {
@@ -71,7 +53,12 @@ img, video {
     #back {
         display: none;
     }
-    video, img {
-        width: 90%;
+    img, video {
+        width: 300px;
+        margin-bottom: 5px;
+    }
+    .vp {
+        font-size: 1.3em;
+        margin-bottom: 100px;
     }
 }
