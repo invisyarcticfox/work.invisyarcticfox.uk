@@ -1,13 +1,10 @@
-body {
-    text-align: center;
-}
-
 h1 {
     animation: animIn 1s 0.5s ease forwards;
     font-size: 3.5em;
     margin-top: 50px;
     text-transform: uppercase;
     opacity: 0;
+    text-align: center;
 }
 h3 {
     animation: animIn 1s 1s ease forwards;
@@ -15,6 +12,7 @@ h3 {
     margin-top: 10px;
     margin-bottom: 100px;
     opacity: 0;
+    text-align: center;
 }
 
 .blender {
@@ -22,12 +20,14 @@ h3 {
     font-size: 2.5em;
     margin-bottom: 20px;
     opacity: 0;
+    text-align: center;
 }
-.edits {
+.dir {
     animation: animIn 1s 2s ease forwards;
     font-size: 2.5em;
     margin-bottom: 20px;
     opacity: 0;
+    text-align: center;
 }
 
 
@@ -46,8 +46,9 @@ h3 {
 }
 .back {
     padding-left: 20px;
-    padding-top: 5px;
+    padding-top: 7px;
 }
+
 
 
 @keyframes backAnim {
@@ -62,13 +63,7 @@ h3 {
 }
 
 
-
-
 @media only screen and (max-width: 600px){
-    #socials {
-        font-size: 1.5em;
-        margin-top: 25%;
-    }
     #back {
         display: none;
     }
@@ -81,12 +76,8 @@ h3 {
         font-size: 1.2em;
         margin-bottom: 60px;
     }
-    .shits {
-        display: block;
-        visibility: visible;
-    }
 
-    .blender, .edits, .tg, .gmod {
+    .blender, .dir {
         font-size: 1.5em;
         margin-bottom: 20px;
     }

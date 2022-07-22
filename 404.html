@@ -17,13 +17,27 @@
             color: #141414;
             background: #fff;
         }
+        a, a:visited {
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+        a:hover, a:focus, a:active {
+            transition: all 0.3s ease;
+            color: #00df00;
+        }
+
         #error {
             font-size: 15em;
-            margin-top: 14%;
+            font-weight: bold;
+            margin-top: 13%;
         }
         .error {
             font-size: 4em;
-            margin-top: -10%;
+            margin-top: -35px;
+        }
+        .home {
+            font-size: 3em;
+            margin-top: 35px;
         }
 
         @media only screen and (max-width: 600px){
@@ -38,8 +52,9 @@
 </head>
 <body>
 
-    <h1 id="error">404</h1>
+    <div id="error">404</div>
     <div class="error">looks like something went wrong</div>
+    <div class="home"><a href="https://shamshitty.xyz">home page</a></div>
     
 </body>
 </html>
