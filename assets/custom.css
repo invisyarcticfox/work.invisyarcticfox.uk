@@ -1,53 +1,29 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: underline !important;
+}
+
+
 h1 {
     animation: animIn 1s 0.5s ease forwards;
     font-size: 3.5em;
-    margin-top: 50px;
+    margin-top: 250px;
     text-transform: uppercase;
     opacity: 0;
-    text-align: center;
 }
-h3 {
+
+#links {
     animation: animIn 1s 1s ease forwards;
-    font-size: 2em;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    opacity: 0;
-    text-align: center;
-}
-
-.blender {
-    animation: animIn 1s 1.5s ease forwards;
     font-size: 2.5em;
-    margin-bottom: 20px;
     opacity: 0;
-    text-align: center;
-}
-.dir {
-    animation: animIn 1s 2s ease forwards;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    opacity: 0;
-    text-align: center;
 }
 
-
-
-@media only screen and (max-width: 600px){
-    #back {
-        display: none;
-    }
-
-    h1 {
-        font-size: 2em;
-        margin-top: 50px;
-    }
-    h3 {
-        font-size: 1.2em;
-        margin-bottom: 60px;
-    }
-
-    .blender, .dir {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-    }
+.link {
+    margin: 15px;
 }

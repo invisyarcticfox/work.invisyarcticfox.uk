@@ -46,19 +46,3 @@ img, video {
         opacity: 1;
     }
 }
-
-
-
-@media only screen and (max-width: 600px){
-    #back {
-        display: none;
-    }
-    img, video {
-        width: 300px;
-        margin-bottom: 5px;
-    }
-    .vp {
-        font-size: 1.3em;
-        margin-bottom: 100px;
-    }
-}
