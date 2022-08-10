@@ -1,29 +1,93 @@
 body {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    margin: 0 auto;
-}
-
-a {
-    text-decoration: underline !important;
+  padding: 0;
+  margin: 0;
 }
 
 
 h1 {
-    animation: animIn 1s 0.5s ease forwards;
-    font-size: 3.5em;
-    margin-top: 250px;
-    text-transform: uppercase;
-    opacity: 0;
+  animation: animIn 1s 0.5s ease forwards;
+  font-size: 3.5em;
+  margin-top: 250px;
+  text-transform: uppercase;
+  opacity: 0;
+  text-align: center;
 }
 
-#links {
-    animation: animIn 1s 1s ease forwards;
-    font-size: 2.5em;
-    opacity: 0;
+ul#links {
+  animation: animIn .75s 1s forwards ease;
+  opacity: 0;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 500px;
+  text-align: center;
+  font-size: 2.5em;
+  text-decoration: none !important;
 }
-
 .link {
-    margin: 15px;
+  display: block; 
+  position: relative; 
+  padding: 10;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+.link > a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+.link > a:hover {
+  color: #00df00;
+  transition: all 0.3s ease;
+}
+.link > a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 25%;
+  width: 50%;
+  position: absolute;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.link > a:hover:after {
+  width: 100%;
+  left: 0;
+  background: #00df00;
+  transition: all 0.3s ease;
+}
+div#links {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    padding: 5;
+    margin: 5;
+  }
+  h1 {
+    font-size: 2.3em;
+    margin-top: 125px;
+  }
+  ul#links {
+    display: none;
+    visibility: hidden;
+  }
+  div#links {
+    animation: animIn .75s 1s forwards ease;
+    opacity: 0;
+    display: block;
+    visibility: visible;
+    font-size: 1.7em;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
