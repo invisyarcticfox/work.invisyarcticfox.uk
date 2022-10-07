@@ -5,7 +5,8 @@ body {
 
 
 h1 {
-  animation: animIn 1s 0.5s ease forwards;
+  animation: var(--animin-transition);
+  animation-delay: 0.5s;
   font-size: 3.5em;
   margin-top: 250px;
   text-transform: uppercase;
@@ -27,7 +28,7 @@ h1 {
   display: block; 
   position: relative; 
   padding: 10;
-  transition: all 0.3s ease;
+  transition: var(--transition-set);
   text-decoration: none !important;
 }
 .link > a {
@@ -36,12 +37,12 @@ h1 {
   display: inline-block;
   padding: 5px 20px;
   position: relative;
-  transition: all 0.3s ease;
+  transition: var(--transition-set);
   text-decoration: none !important;
 }
 .link > a:hover {
   color: var(--link-colour);
-  transition: all 0.3s ease;
+  transition: var(--transition-set);
 }
 .link > a:after {
   background: none repeat scroll 0 0 transparent;
@@ -53,13 +54,13 @@ h1 {
   width: 50%;
   position: absolute;
   background: #fff;
-  transition: all 0.3s ease;
+  transition: var(--transition-set);
 }
 .link > a:hover:after {
   width: 100%;
   left: 0;
   background: var(--link-colour);
-  transition: all 0.3s ease;
+  transition: var(--transition-set);
 }
 
 
