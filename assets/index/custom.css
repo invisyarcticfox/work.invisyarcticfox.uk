@@ -29,6 +29,10 @@ h1 {
   position: relative; 
   padding: 10;
   transition: var(--transition-set);
+
+  animation: var(--animin-transition);
+  opacity: 0;
+  
   text-decoration: none !important;
 }
 .link > a {
@@ -61,6 +65,16 @@ h1 {
   left: 0;
   background: var(--link-colour);
   transition: var(--transition-set);
+}
+
+.link:nth-child(1) {
+  animation-delay: 1s;
+}
+.link:nth-child(2) {
+  animation-delay: 1.1s;
+}
+.link:nth-child(3) {
+  animation-delay: 1.2s;
 }
 
 
