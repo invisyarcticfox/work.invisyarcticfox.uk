@@ -28,7 +28,7 @@ h1 {
   display: block; 
   position: relative; 
   padding: 10;
-  transition: var(--transition-set);
+  transition: all .3s ease;
 
   animation: var(--animin-transition);
   opacity: 0;
@@ -41,12 +41,12 @@ h1 {
   display: inline-block;
   padding: 5px 20px;
   position: relative;
-  transition: var(--transition-set);
+  transition: all .3s ease;
   text-decoration: none !important;
 }
 .link > a:hover {
   color: var(--link-colour);
-  transition: var(--transition-set);
+  transition: all .3s ease;
 }
 .link > a:after {
   background: none repeat scroll 0 0 transparent;
@@ -58,13 +58,13 @@ h1 {
   width: 50%;
   position: absolute;
   background: #fff;
-  transition: var(--transition-set);
+  transition: all .3s ease;
 }
 .link > a:hover:after {
   width: 100%;
   left: 0;
   background: var(--link-colour);
-  transition: var(--transition-set);
+  transition: all .3s ease;
 }
 
 .link:nth-child(1) {
