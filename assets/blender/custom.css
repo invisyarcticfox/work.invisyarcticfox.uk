@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.divider {
+  width: 1111px;
+  height: 5px;
+  background-color: grey;
+  display: block;
+  margin: 50px auto;
+  border-radius: 50px;
+}
+
+
+#blendercont {
+  width: 1000px;
+  margin: 0 auto;
+}
+#blendercont video {
+  margin: 5px auto;
+  width: 100%;
+}
+#blendercont img.volumetric {
+  margin: 5px auto;
+  width: 50%;
+}
+.blenderheader {
+  font-size: 2em;
+  margin-bottom: 5px
+}
+
+
+@media only screen and (max-width: 650px) {
+  .divider {
+    height: 2px;
+    margin: 25px auto;
+  }
+  #blendercont {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #blendercont video {
+    margin: 2px auto;
+    width: 100%;
+  }
+  #blendercont img.volumetric {
+    margin: 5px auto;
+    width: 70%;
+    border-radius: 15px;
+  }
+  .blenderheader {
+    font-size: 1.1em;
+    margin-bottom: 5px
+  }
+}
