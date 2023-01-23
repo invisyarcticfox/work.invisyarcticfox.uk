@@ -24,21 +24,29 @@ body {
 }
 #blendercont img.volumetric {
   margin: 5px auto;
-  width: 50%;
+  width: 49%;
 }
 .blenderheader {
   font-size: 2em;
   margin-bottom: 5px
+}
+.blendernote {
+  float: left;
+  font-size: 1.25em;
+}
+.blendernote.credit {
+  float: none;
 }
 
 
 @media only screen and (max-width: 650px) {
   .divider {
     height: 2px;
+    width: 90%;
     margin: 25px auto;
   }
   #blendercont {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
   }
   #blendercont video {
@@ -48,10 +56,13 @@ body {
   #blendercont img.volumetric {
     margin: 5px auto;
     width: 70%;
-    border-radius: 15px;
   }
   .blenderheader {
     font-size: 1.1em;
     margin-bottom: 5px
+  }
+  .blendernote {
+    float: left;
+    font-size: .9em;
   }
 }

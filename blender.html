@@ -34,10 +34,10 @@
         <div class="blenderheader">
             <b>mocap kick</b>
         </div>
-        <video controls src="./assets/blender/mixamo/kick/1.mp4"></video>
-        <video controls src="./assets/blender/mixamo/kick/2.mp4"></video>
-        <video controls src="./assets/blender/mixamo/kick/3.mp4"></video>
-        <video controls src="./assets/blender/mixamo/kick/4.mp4"></video>
+        <video controls muted src="./assets/blender/mixamo/kick/1.mp4"></video>
+        <video controls muted src="./assets/blender/mixamo/kick/2.mp4"></video>
+        <video controls muted src="./assets/blender/mixamo/kick/3.mp4"></video>
+        <video controls muted src="./assets/blender/mixamo/kick/4.mp4"></video>
     </div>
 
     <div class="divider"></div>
@@ -46,9 +46,9 @@
         <div class="blenderheader">
             <b>mapping test</b>
         </div>
-        <video controls src="./assets/blender/mixamo/mapping/1.mp4"></video>
-        <video controls src="./assets/blender/mixamo/mapping/2.mp4"></video>
-        <video controls src="./assets/blender/mixamo/mapping/3.mp4"></video>
+        <video controls muted src="./assets/blender/mixamo/mapping/1.mp4"></video>
+        <video controls muted src="./assets/blender/mixamo/mapping/2.mp4"></video>
+        <video controls muted src="./assets/blender/mixamo/mapping/3.mp4"></video>
     </div>
 
     <div class="divider"></div>
@@ -57,13 +57,28 @@
         <div class="blenderheader">
             <b>volumetric lighting</b>
         </div>
-        <img class="volumetric" controls src="./assets/blender/mixamo/volumetric/lookup.png"></img>
-        <img class="volumetric" controls src="./assets/blender/mixamo/volumetric/phone.png"></img>
-        <img class="volumetric" controls src="./assets/blender/mixamo/volumetric/phoneback.png"></img>
+        <img class="volumetric" src="./assets/blender/mixamo/volumetric/lookup.png"></img>
+        <img class="volumetric" src="./assets/blender/mixamo/volumetric/phone.png"></img>
+        <img class="volumetric" src="./assets/blender/mixamo/volumetric/phoneback.png"></img>
     </div>
 
-    <div style="margin: 100px 0px;"></div>
-    <div style="margin-bottom: 10px;">character models and mocap animations from <a href="https://www.mixamo.com" target="_blank" rel="noopener noreferrer">mixamo.com</a></div>
+    <div class="divider"></div>
+
+    <div id="blendercont">
+        <div class="blenderheader">
+            <b>walking</b>
+        </div>
+        <span class="blendernote">eevee</span>
+        <video style="margin-bottom: 20px;" controls muted src="./assets/blender/mixamo/walking/eevee.mp4"></video>
+
+        <span class="blendernote">cycles</span>
+        <video controls muted src="./assets/blender/mixamo/walking/cycles.mp4"></video>
+        <span class="blendernote credit">
+            <a href="https://skfb.ly/oB6CR">baseball bat model</a>
+        </span>
+    </div>
+
+    <div style="margin: 150px 0 25px 0;">character models and mocap animations from <a href="https://www.mixamo.com" target="_blank" rel="noopener noreferrer">mixamo.com</a></div>
 
 </body>
 </html>
