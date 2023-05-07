@@ -19,7 +19,7 @@ body {
 
 
 h1 {
-  animation: var(--animin-transition);
+  animation: var(--animin);
   animation-delay: 0.5s;
   font-size: 3.5em;
   text-transform: uppercase;
@@ -45,7 +45,7 @@ h1 {
   padding: 10;
   transition: all .3s ease;
 
-  animation: var(--animin-transition);
+  animation: var(--animin);
   opacity: 0;
   
   text-decoration: none !important;
