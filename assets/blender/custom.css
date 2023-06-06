@@ -14,6 +14,8 @@ h1 {
 }
 .cont span {
   font-size: 1.75em;
+  display: block;
+  margin-bottom: 35px;
 }
 
 img, video {
