@@ -1,6 +1,8 @@
 body {
   text-align: center;
-  margin: 0 auto;
+}
+body #back {
+  text-align: left !important;
 }
 
 h1 {
@@ -17,8 +19,7 @@ h1 {
   display: block;
   margin-bottom: 35px;
 }
-
-img, video {
+.cont img, .cont video {
   margin: 10px auto;
 }
 
@@ -27,4 +28,4 @@ img, video {
   height: 1px;
   background: #aaa;
   margin: 20px auto;
-}
+}/*# sourceMappingURL=custom.css.map */
