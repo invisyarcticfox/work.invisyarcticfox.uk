@@ -1,8 +1,15 @@
-body {
-  padding: 0;
-  margin: 0;
+.mlm {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  transform: rotate(-45deg) translateX(145px);
 }
-
+.mlm:hover {
+  width: 205px;
+  height: 205px;
+}
 
 #centerdiv {
   align-items: center;
@@ -14,12 +21,10 @@ body {
   position: absolute;
   top: 0;
   vertical-align: middle;
-  width: 100%
+  width: 100%;
 }
 
-
 h1 {
-  animation: var(--animin);
   animation-delay: 0.5s;
   font-size: 3.5em;
   text-transform: uppercase;
@@ -37,34 +42,34 @@ h1 {
   font-size: 2.5em;
   text-decoration: none !important;
 }
-
-
-.link {
-  display: block; 
-  position: relative; 
+.linkcontainer .link {
+  display: block;
+  position: relative;
   padding: 10;
-  transition: all .3s ease;
-
-  animation: var(--animin);
+  transition: all 0.3s ease;
   opacity: 0;
-  
   text-decoration: none !important;
 }
-
-.link a {
+.linkcontainer .link a {
   color: #fff;
   text-decoration: none;
   display: inline-block;
   padding: 5px 20px;
   position: relative;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   text-decoration: none !important;
 }
-.link a:hover {
-  color: var(--link-colour);
-  transition: all .3s ease;
+.linkcontainer .link a:hover {
+  color: var(--accent);
+  transition: all 0.3s ease;
 }
-.link a:after {
+.linkcontainer .link a:hover:after {
+  width: 100%;
+  left: 0;
+  background: var(--accent);
+  transition: all 0.3s ease;
+}
+.linkcontainer .link a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -74,37 +79,5 @@ h1 {
   width: 50%;
   position: absolute;
   background: #fff;
-  transition: all .3s ease;
-}
-.link a:hover:after {
-  width: 100%;
-  left: 0;
-  background: var(--link-colour);
-  transition: all .3s ease;
-}
-
-
-.link:nth-child(1) {
-  animation-delay: 1s;
-}
-.link:nth-child(2) {
-  animation-delay: 1.2s;
-}
-.link:nth-child(3) {
-  animation-delay: 1.4s;
-}
-
-
-@media only screen and (max-width: 650px) {
-  body {
-    overflow: hidden;
-  }
-  h1 {
-    font-size: 2.5em;
-  }
-  .linkcontainer {
-    font-size: 2em;
-    display: block;
-    width: 300px;
-  }
-}
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=custom.css.map */
