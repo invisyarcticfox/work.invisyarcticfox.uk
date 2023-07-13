@@ -28,7 +28,6 @@ h1 {
   animation-delay: 0.5s;
   font-size: 3.5em;
   text-transform: uppercase;
-  opacity: 0;
   text-align: center;
 }
 
@@ -47,7 +46,6 @@ h1 {
   position: relative;
   padding: 10;
   transition: all 0.3s ease;
-  opacity: 0;
   text-decoration: none !important;
 }
 .linkcontainer .link a {
