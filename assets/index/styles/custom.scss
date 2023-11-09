@@ -1,0 +1,60 @@
+@import '../../vars';
+
+
+div[id] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+main {
+  transform: translate(0%, 25vh);
+
+  h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .desc {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+#links {
+  width: 50%;
+  font-size: 40px;
+  text-align: center;
+  div {
+    margin: 25px auto;
+    width: 50%;
+    a {
+      text-decoration: none;
+      padding-bottom: 5px;
+      &::after {
+        content: "";
+        margin: 0 auto;
+        margin-top: 5px;
+        display: block;
+        position: absolute;
+        background: $fg;
+        left: 47.5%;
+        width: 5%;
+        height: 3px;
+        transition-property: background, width, left;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+      }
+      &:hover::after {
+        background: $accent;
+        transition-property: background, width, left;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+        width: 10%;
+        left: 45%;
+      } /* i can probably calc() the width and left but whatever */
+    }
+  }
+}
+
+
+@import './mobile';
