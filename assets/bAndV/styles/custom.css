@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+.cont {
+  width: 75%;
+  margin: 0 auto;
+}
+.cont span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 50px;
+}
+.cont img, .cont video {
+  margin: 10px auto;
+}
+
+.divider {
+  width: 85%;
+  height: 1px;
+  background: #aaa;
+  margin: 20px auto;
+}/*# sourceMappingURL=custom.css.map */
