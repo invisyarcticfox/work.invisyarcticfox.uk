@@ -23,7 +23,9 @@ h1 {
   img, video {
     margin: 10px auto;
   }
-  
+  .vnote {
+    font-size: 25px;
+  }
 }
 .divider {
   width: 85%;
@@ -31,3 +33,6 @@ h1 {
   background: $lgrey;
   margin: 20px auto;
 }
+
+
+@import './mobile';

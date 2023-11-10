@@ -51,4 +51,34 @@ main .desc {
   transition-timing-function: ease;
   width: 10%;
   left: 45%;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    margin: 0 10px;
+  }
+  main {
+    transform: translate(0%, 15vh);
+  }
+  main h1 {
+    font-size: 50px;
+  }
+  main .desc {
+    font-size: 20px;
+  }
+  #links {
+    width: 90%;
+    font-size: 25px;
+  }
+  #links div {
+    width: 90%;
+  }
+  #links div a::after {
+    left: 45%;
+    width: 10%;
+  }
+  #links div a:hover::after {
+    width: 25%;
+    left: 37.5%;
+  }
 }/*# sourceMappingURL=custom.css.map */

@@ -20,10 +20,32 @@ h1 {
 .cont img, .cont video {
   margin: 10px auto;
 }
+.cont .vnote {
+  font-size: 25px;
+}
 
 .divider {
   width: 85%;
   height: 1px;
   background: #aaa;
   margin: 20px auto;
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 40px;
+  }
+  .cont {
+    width: 90%;
+  }
+  .cont span {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .cont img, .cont video {
+    width: 100%;
+  }
+  .cont .vnote {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=custom.css.map */

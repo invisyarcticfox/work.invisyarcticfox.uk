@@ -1,0 +1,19 @@
+@media screen and (max-width: 720px){
+  h1 {
+    font-size: 40px;
+  }
+  .cont {
+    width: 90%;
+
+    span {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    img, video {
+      width: 100%;
+    }
+    .vnote {
+      font-size: 20px;
+    }
+  }
+}
