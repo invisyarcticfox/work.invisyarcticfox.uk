@@ -1,0 +1,84 @@
+div[id] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+main {
+  transform: translate(0%, 25vh);
+}
+main h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+main .desc {
+  text-align: center;
+  font-size: 30px;
+}
+
+#links {
+  width: 50%;
+  font-size: 40px;
+  text-align: center;
+}
+#links div {
+  margin: 25px auto;
+  width: 50%;
+}
+#links div a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  /* i can probably calc() the width and left but whatever */
+}
+#links div a::after {
+  content: "";
+  margin: 0 auto;
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  background: #fff;
+  left: 47.5%;
+  width: 5%;
+  height: 3px;
+  transition-property: background, width, left;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+#links div a:hover::after {
+  background: #0e0;
+  transition-property: background, width, left;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  width: 10%;
+  left: 45%;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    margin: 0 10px;
+  }
+  main {
+    transform: translate(0%, 15vh);
+  }
+  main h1 {
+    font-size: 50px;
+  }
+  main .desc {
+    font-size: 20px;
+  }
+  #links {
+    width: 90%;
+    font-size: 25px;
+  }
+  #links div {
+    width: 90%;
+  }
+  #links div a::after {
+    left: 45%;
+    width: 10%;
+  }
+  #links div a:hover::after {
+    width: 25%;
+    left: 37.5%;
+  }
+}/*# sourceMappingURL=custom.css.map */
