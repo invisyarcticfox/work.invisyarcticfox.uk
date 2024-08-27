@@ -1,0 +1,75 @@
+body {
+  background: #141414;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px 0 0 25px;
+  font-size: 22px;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+a, a:visited, a:active, a:focus {
+  color: #0080ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #9c30ff;
+  text-decoration: underline;
+}
+
+@mixin imgpos {
+  position: relative;
+  vertical-align: bottom;
+  bottom: 2px;
+  margin-right: 5px;
+}
+
+
+h1 {
+  font-size: 30px;
+  a {
+    color: #2a2 !important;
+    text-decoration: underline;
+    img {
+      @include imgpos;
+      height: 30px;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+  li img {
+    @include imgpos;
+  }
+}
+
+.spotify .info {
+  margin: 5px 0 0 15px;
+  img {
+    width: calc(26px * 3);
+    float: left;
+    margin-right: 5px;
+  }
+  .title {
+    font-weight: bold;
+  }
+}
+
+
+footer {
+  position: fixed;
+  font-size: 15px;
+  left: 10px;
+  bottom: 20px;
+  width: 100%;
+  color: #888;
+  text-align: left;
+  p {
+    margin: 2px 0;
+  }
+}

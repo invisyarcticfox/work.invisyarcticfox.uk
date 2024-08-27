@@ -1,0 +1,78 @@
+body {
+  background: #141414;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px 0 0 25px;
+  font-size: 22px;
+}
+
+::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+a, a:visited, a:active, a:focus {
+  color: #0080ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9c30ff;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 30px;
+}
+h1 a {
+  color: #2a2 !important;
+  text-decoration: underline;
+}
+h1 a img {
+  position: relative;
+  vertical-align: bottom;
+  bottom: 2px;
+  margin-right: 5px;
+  height: 30px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+ul li img {
+  position: relative;
+  vertical-align: bottom;
+  bottom: 2px;
+  margin-right: 5px;
+}
+
+.spotify .info {
+  margin: 5px 0 0 15px;
+}
+.spotify .info img {
+  width: 78px;
+  float: left;
+  margin-right: 5px;
+}
+.spotify .info .title {
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  font-size: 15px;
+  left: 10px;
+  bottom: 20px;
+  width: 100%;
+  color: #888;
+  text-align: left;
+}
+footer p {
+  margin: 2px 0;
+}/*# sourceMappingURL=style.css.map */
